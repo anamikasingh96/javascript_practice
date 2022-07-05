@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//     function myFunction(a, b){
+//     var arr = a.concat(b);
+//     // console.log(arr);
+//     let len = arr.length;
+//     let newarr = [];
+//     for(var i=0 ; i<len ;i++){
+//         if(newarr.indexOf(arr[i]) === -1){
+//             newarr.push(arr[i]);
+//         }
+//     return newarr;
+//     }
+// }
+// console.log(newarr);
+//  myFunction([1,2,3,4,5],[1,7,8,9,2]);
+
+
+function myFunction(a,b){
+    var arr = a.concat(b);
+    let newarr = [];
+    let len = arr.length;
+    arr.sort();
+    console.log(arr);
+    let temp;
+    for(var i=0 ; i<len ;i++){
+        if (arr[i] !== temp)
+        newarr.push(arr[i]);
+        temp = arr[i];
+    }
+    console.log(newarr);
+}
+
+ myFunction([1,2,3,4,5],[1,7,8,9,2]);
+                        
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

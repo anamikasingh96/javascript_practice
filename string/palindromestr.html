@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var str = prompt("enter a string");
+        // var len = str.length;
+        //  var msg = 'it is a palindrome string';
+        // for(var i=0 ; i<=len/2 ; i++){
+        //     if(str[i] != str[len-1-i]){
+        //         msg = 'it is not a palindrome string';
+        //     }
+        // }
+        // console.log(`${str}:${msg}`);
+
+        // by using built function
+        var str = prompt("enter a string");
+        var strarr = str.split('');
+        var reversearr = strarr.reverse();
+        var reversestr = reversearr.join('');
+        console.log(reversestr);
+        if(str == reversestr){
+            console.log(`${str} is a palindrome string`);
+        }else{
+            console.log(`${str} is not 
+            a palindrome string`);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+        // for right angle triangle
+        // let base = prompt("pls enter base value", "");
+        // let height = prompt("pls enter height value", "");
+        // let area = (base * height) / 2
+        // console.log("area of triangle is " + area);
+
+        // for area of regular triangle
+        let side1 = prompt("Enter side 1", "");
+        let side2 = prompt("Enter side 2", "");
+        let side3 = prompt("Enter side 3", "");   
+        let s = (parseInt(side1) +parseInt(side2) + parseInt(side3))/2
+        // console.log(s);
+        let temp = s*(s-side1) * (s-side2) * (s-side3)    
+        console.log(Math.sqrt(temp));
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

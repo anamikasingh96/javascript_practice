@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    // function print2largest(arr,n){
+    //     let uniqarr = [...new Set(arr)];
+    //     console.log(uniqarr);
+    //  let sortarr = uniqarr.sort(function(a,b) {
+    //         return b-a;
+    //     });
+    //     console.log(sortarr); 
+    // console.log(sortarr[1])
+    // }
+    // print2largest([5,10,3,3,5,53,21],5)
+
+    function swapKth(arr,n,k){
+        //code here
+        let temp;
+        temp = arr[k];
+        arr[k] = arr[n-k-1];
+        arr[n-k-1] = temp;
+        console.log(arr.join(" "))
+    }
+    swapKth([2,3,5,5,2,6,1,6],8,2)
+     
+    // function myFunction(a){
+    //     let arr = []
+       
+    //     for(let key in a ){
+    //     arr.push(a[key])
+    //     }  
+    //     //console.log(arr)
+    //     let sum = 0
+    //     for( let i=0 ;i<arr.length; i++){
+    //     sum += arr[i]
+    //     }
+    //     return console.log(sum)
+    //     }
+    //     // console.log(sum)
+    //     myFunction({a:1,b:2,c:3})
+
+    // function myFunction(obj){
+    //     for(let key in obj){
+    //     if(key == 'b') 
+    //     delete obj[key]
+    //     }
+    //     return console.log(obj)
+    //     }
+
+    //     myFunction({ a: 1, b: 7, c: 3 })
+
+
+    // function myFunction(a){
+    //     var uniqueArray = Array.from(new Set(a));
+    //     let obj ={...uniqueArray}
+    //     return console.log(obj);
+    //     }
+
+    //     myFunction([1,2,2,3])
+
+    // Merge two objects with matching keys
+
+    // function myFunction(x, y){
+    //     for (let key in y){
+    //         if(key == 'b'){
+    //             y['d'] = y[key]
+    //             delete y[key]
+                
+    //         }
+    //     }
+    //     return console.log({...x,...y})
+    // }
+
+    //     myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 })
+    //     myFunction({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 })
+
+
+        // Multiply all object values by x   
+
+
+    // function myFunction(a, b)
+    //     {
+    //     let obj = {}
+    //     for(let key in a){
+    //        obj[key] = a[key]*b
+    //     }
+    //     return console.log(obj)
+    //     }
+    //     myFunction({a:1,b:2,c:3},3)
+    //     myFunction({j:9,i:2,x:3,z:4},10)
+    //     myFunction({w:15,x:22,y:13},6)
+
+        // Replace empty strings in object with null values
+
+    // function myFunction(obj){
+    //     for( let key in obj ){
+    //     if(obj[key] === ''){
+    //        obj[key]  = null
+    //     }
+    //     }
+        // Object.keys(obj).forEach(k => obj[k] = obj[k] === '' ? null : obj[k])
+        // return console.log(obj);
+        // }
+
+        // myFunction({ a: 'a', b: 'b', c: '' })
+        // myFunction({ a: '', b: 'b', c: ' ', d: 'd' })
+        // myFunction({ a: 'a', b: 'b ', c: ' ', d: '' })
+
+    // Extracting information from objects
+
+    // Add property to each object in array
+    // function myFunction(arr, str){
+    //         arr.forEach((element) => {
+    //             element.continent = str
+    //         });
+    //      return console.log(arr);
+    //      }
+
+    //     myFunction([{ city: 'Tokyo', country: 'Japan' }, { city: 'Bangkok', country: 'Thailand' }], 'Asia')
+
+
+    // Convert array to object with counter
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

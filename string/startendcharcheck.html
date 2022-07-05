@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = prompt('enter a string');
+        var teststart = str.startsWith('w');
+        var testend = str.endsWith('e');
+        console.log(`start:${teststart}`);
+        console.log(`end:${testend}`);
+        if(teststart == true && testend == true){
+            console.log(`${str} starts with w and ends with e`);
+        }else if(teststart == true && testend == false){
+            console.log(`${str} starts with w`);
+        }else if(teststart == false && testend == true){
+            console.log(`${str} ends with e`);
+        }else{
+            console.log("neither starts with w nor ends with e");
+                }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
